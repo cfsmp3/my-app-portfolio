@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:id="@+id/Layout">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scores App"
+        android:id="@+id/butScoresApp"
+        android:layout_below="@+id/butSpotifyStreamer"
+        android:layout_alignLeft="@+id/butLibraryApp"
+        android:layout_alignStart="@+id/butLibraryApp"
+        android:layout_alignRight="@+id/butCapstone"
+        android:layout_alignEnd="@+id/butCapstone"
+        android:onClick="buttonOnClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LIBRARY APP"
+        android:id="@+id/butLibraryApp"
+        android:layout_above="@+id/butBuildItBigger"
+        android:layout_alignLeft="@+id/butBuildItBigger"
+        android:layout_alignStart="@+id/butBuildItBigger"
+        android:layout_alignRight="@+id/butCapstone"
+        android:layout_alignEnd="@+id/butCapstone"
+        android:onClick="buttonOnClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BUILD IT BIGGER"
+        android:id="@+id/butBuildItBigger"
+        android:layout_above="@+id/butXYZreader"
+        android:layout_alignLeft="@+id/butCapstone"
+        android:layout_alignStart="@+id/butCapstone"
+        android:layout_alignRight="@+id/butCapstone"
+        android:layout_alignEnd="@+id/butCapstone"
+        android:onClick="buttonOnClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XYZ READER"
+        android:id="@+id/butXYZreader"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/butCapstone"
+        android:layout_alignStart="@+id/butCapstone"
+        android:layout_alignRight="@+id/butBuildItBigger"
+        android:layout_alignEnd="@+id/butBuildItBigger"
+        android:onClick="buttonOnClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CAPSTONE: MY OWN APP"
+        android:id="@+id/butCapstone"
+        android:layout_below="@+id/butXYZreader"
+        android:layout_centerHorizontal="true"
+        android:onClick="buttonOnClick" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My NanoDegree apps!"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SPOTIFY STREAMER"
+        android:id="@+id/butSpotifyStreamer"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/butScoresApp"
+        android:layout_alignStart="@+id/butScoresApp"
+        android:layout_alignRight="@+id/butCapstone"
+        android:layout_alignEnd="@+id/butCapstone"
+        android:onClick="buttonOnClick" />
+
+</RelativeLayout>
